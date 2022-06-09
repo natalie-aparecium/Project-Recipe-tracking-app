@@ -2,8 +2,6 @@ import React from "react";
 
 //RecipeView will help display the recipes and delete if necessary
 function RecipeView({ recipe, deleteRecipe }) {
-    //test to see if recipes are read correctly
-    console.log(recipe, deleteRecipe);
     return (
         <tr>
             <td>{recipe.name}</td>

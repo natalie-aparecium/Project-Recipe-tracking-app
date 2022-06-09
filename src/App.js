@@ -16,7 +16,7 @@ function App() {
   const createRecipe = (newRecipe) => {
     setRecipes([...recipes, newRecipe]);
   };
-  
+  //return render calls to other components
   return (
     <div className="App">
       <header><h1>Delicious Food Recipes</h1></header>

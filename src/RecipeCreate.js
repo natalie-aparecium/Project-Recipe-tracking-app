@@ -24,7 +24,6 @@ function RecipeCreate({createRecipe}) {
   // TODO: When the form is submitted, a new recipe should be created, and the form contents cleared.
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("Submitted:", content);
     createRecipe(content);
     setContent({...initialFormState});
   };
@@ -35,7 +34,7 @@ function RecipeCreate({createRecipe}) {
       <table>
         <tbody>
           <tr>
-            <td>
+            <td className="createTenPercent">
               <input
                 id="name"
                 name="name"
@@ -45,7 +44,7 @@ function RecipeCreate({createRecipe}) {
                 value={content.name}
               />
             </td>
-            <td>
+            <td className="createTenPercent">
               <input
                 id="cuisine"
                 name="cuisine"
@@ -55,7 +54,7 @@ function RecipeCreate({createRecipe}) {
                 value={content.cuisine}
               />
             </td>
-            <td>
+            <td className="createTenPercent">
               <input
                 id="photo"
                 name="photo"
@@ -65,7 +64,7 @@ function RecipeCreate({createRecipe}) {
                 value={content.photo}
               />
             </td>
-            <td>
+            <td className="content_td createThirtyPercent">
               <textarea
                 id="ingredients"
                 name="ingredients"
@@ -75,7 +74,7 @@ function RecipeCreate({createRecipe}) {
                 value={content.ingredients}
               />
             </td>
-            <td>
+            <td className="content_td createThirtyPercent">
               <textarea
                 id="preparation"
                 name="preparation"
@@ -85,7 +84,7 @@ function RecipeCreate({createRecipe}) {
                 value={content.preparation}
               />
             </td>
-            <td>
+            <td className="createLast">
               <button type="submit">Create</button>
             </td>
           </tr>
